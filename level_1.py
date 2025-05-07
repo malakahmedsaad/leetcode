@@ -1,3 +1,6 @@
+#1
+
+
 # def say_hello():
 #     return("hello world")
 #
@@ -7,7 +10,9 @@
 # if __name__ == '__main__':
 #     main()
 
-#Write a function add_numbers(a, b) that returns the sum of two numbers.Your turn!
+#2
+#
+# Write a function add_numbers(a, b) that returns the sum of two numbers.Your turn!
 
 # def add_numbers(a,b):
 #     return a+b
@@ -17,7 +22,9 @@
 # if __name__ == '__main__':
 #     main()
 
-#find_max([3, 7, 2, 9, 5]) → 9
+#3
+#
+# find_max([3, 7, 2, 9, 5]) → 9
 # def find_max(numbers):
 #     max = numbers[0]
 #     for i in numbers:
@@ -26,7 +33,9 @@
 #     return max
 # print(find_max([3,7,2,9,5]))
 
-#count_evens([1, 2, 3, 4, 5, 6]) → 3
+#4
+#
+# count_evens([1, 2, 3, 4, 5, 6]) → 3
 # def count_evens(numbers):
 #     count = 0
 #     for i in numbers:
@@ -36,7 +45,9 @@
 #
 # print(count_evens([1, 2, 3, 4, 5, 6]))
 
-#reverse_list([1, 2, 3, 4]) → [4, 3, 2, 1]
+#5
+#
+# reverse_list([1, 2, 3, 4]) → [4, 3, 2, 1]
 # def reverse_list(numbers):
 #     newnumbers = []
 #     for i in numbers:
@@ -51,6 +62,9 @@
 #     return numbers
 # print(reverse_list([1, 2, 3, 4]))
 
+# 6
+#
+#
 # is_palindrome("racecar") → True
 # is_palindrome("hello") → False
 #
@@ -70,6 +84,9 @@
 #     return word == word[::-1]
 # print(is_palindrome("racecar"))
 
+#7
+#
+#
 # first_duplicate([1, 2, 3, 2, 4, 5]) → 2
 # first_duplicate([1, 2, 3, 4, 5]) → None
 
@@ -83,6 +100,9 @@
 #
 # print(first_duplicate([1, 2, 3, 2, 4, 5]))
 
+#8
+#
+#
 # fibonacci(0) → 0
 # fibonacci(1) → 1
 # fibonacci(5) → 5
@@ -104,19 +124,32 @@
 
 
 
+# 9
+#
 # capitalize_words("hello world") → "Hello World"
 # capitalize_words("python is fun") → "Python Is Fun"
-def capitalize(sentence):
-    words = sentence.split()
-    capitalized_words = []
-    for word in words:
-        capitalized_words.append(word.capitalize())
-    return " ".join(capitalized_words)
+# def capitalize(sentence):
+#     words = sentence.split()
+#     capitalized_words = []
+#     for word in words:
+#         capitalized_words.append(word.capitalize())
+#     return " ".join(capitalized_words)
+#
+#
+# print(capitalize("python is fun"))  # Output: "Python Is Fun"
 
+# sum_of_digits(123) → 6   (1 + 2 + 3)
+# sum_of_digits(505) → 10  (5 + 0 + 5)
 
-print(capitalize("python is fun"))  # Output: "Python Is Fun"
-
-
+# 10
+#
+# def sum_of_digits(numbers):
+#     total = 0
+#     for i in str(numbers):
+#         total += int(i)
+#
+#     return total
+# print(sum_of_digits(123))
 
 
 
