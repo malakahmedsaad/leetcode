@@ -87,24 +87,34 @@
 # fibonacci(1) → 1
 # fibonacci(5) → 5
 # fibonacci(6) → 8
-
-def fibonacci(n):
-    if n == 0 :
-        return 0
-    elif n == 1 :
-        return 1
-    else:
-        return fibonacci(n-1)+fibonacci(n-2)
-
-print(fibonacci(6))
-print(fibonacci(5))
+#
+# def fibonacci(n):
+#     if n == 0 :
+#         return 0
+#     elif n == 1 :
+#         return 1
+#     else:
+#         return fibonacci(n-1)+fibonacci(n-2)
+#
+# print(fibonacci(6))
+# print(fibonacci(5))
 # fibonacci(5) → 5
 # fibonacci(6) → 8
 
 
 
 
+# capitalize_words("hello world") → "Hello World"
+# capitalize_words("python is fun") → "Python Is Fun"
+def capitalize(sentence):
+    words = sentence.split()
+    capitalized_words = []
+    for word in words:
+        capitalized_words.append(word.capitalize())
+    return " ".join(capitalized_words)
 
+
+print(capitalize("python is fun"))  # Output: "Python Is Fun"
 
 
 
