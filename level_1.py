@@ -1,5 +1,6 @@
-#1
-
+# 1
+# Q: What does this function do?
+# A: I created a simple function that returns "hello world", and then called it from main.
 
 # def say_hello():
 #     return("hello world")
@@ -10,21 +11,24 @@
 # if __name__ == '__main__':
 #     main()
 
-#2
-#
-# Write a function add_numbers(a, b) that returns the sum of two numbers.Your turn!
+
+# 2
+# Q: How do you add two numbers?
+# A: I wrote a function that takes two arguments and returns their sum.
 
 # def add_numbers(a,b):
 #     return a+b
 # def main():
-#     add_numbers(3,6)
+#     add_numbers(3,6)  # I call the function but forgot to print the result; still, the logic is correct.
 #
 # if __name__ == '__main__':
 #     main()
 
-#3
-#
-# find_max([3, 7, 2, 9, 5]) → 9
+
+# 3
+# Q: How did you find the maximum number in a list?
+# A: I initialized `max` with the first element, then compared each item in the list and updated it.
+
 # def find_max(numbers):
 #     max = numbers[0]
 #     for i in numbers:
@@ -33,9 +37,11 @@
 #     return max
 # print(find_max([3,7,2,9,5]))
 
-#4
-#
-# count_evens([1, 2, 3, 4, 5, 6]) → 3
+
+# 4
+# Q: How did you count the number of even numbers?
+# A: I looped through the list and increased the counter when the number was divisible by 2.
+
 # def count_evens(numbers):
 #     count = 0
 #     for i in numbers:
@@ -45,9 +51,11 @@
 #
 # print(count_evens([1, 2, 3, 4, 5, 6]))
 
-#5
-#
-# reverse_list([1, 2, 3, 4]) → [4, 3, 2, 1]
+
+# 5
+# Q: How do you reverse the list?
+# A: I used two methods. One with `insert(0, i)` to build the reverse, and one with slicing.
+
 # def reverse_list(numbers):
 #     newnumbers = []
 #     for i in numbers:
@@ -55,19 +63,19 @@
 #     return newnumbers
 # print(reverse_list([1, 2, 3, 4]))
 
-#OR
+# OR
 
 # def reverse_list(numbers):
 #     numbers = numbers [::-1]
 #     return numbers
 # print(reverse_list([1, 2, 3, 4]))
 
+
 # 6
-#
-#
-# is_palindrome("racecar") → True
-# is_palindrome("hello") → False
-#
+# Q: How do you check if a word is a palindrome?
+# A: First, I used a while loop with two pointers to compare characters from both ends.
+# Then I did the same thing using Python slicing for a simpler solution.
+
 # def is_palindrome(word):
 #     right = len(word) - 1
 #     left = 0
@@ -84,11 +92,10 @@
 #     return word == word[::-1]
 # print(is_palindrome("racecar"))
 
-#7
-#
-#
-# first_duplicate([1, 2, 3, 2, 4, 5]) → 2
-# first_duplicate([1, 2, 3, 4, 5]) → None
+
+# 7
+# Q: How do you find the first duplicate?
+# A: I used a list to keep track of seen numbers. If a number appears again, I return it immediately.
 
 # def first_duplicate(numbers):
 #     numberslist = []
@@ -100,14 +107,11 @@
 #
 # print(first_duplicate([1, 2, 3, 2, 4, 5]))
 
-#8
-#
-#
-# fibonacci(0) → 0
-# fibonacci(1) → 1
-# fibonacci(5) → 5
-# fibonacci(6) → 8
-#
+
+# 8
+# Q: How do you implement the Fibonacci sequence?
+# A: I used recursion with the base cases for 0 and 1, and recursively added the previous two numbers.
+
 # def fibonacci(n):
 #     if n == 0 :
 #         return 0
@@ -118,16 +122,12 @@
 #
 # print(fibonacci(6))
 # print(fibonacci(5))
-# fibonacci(5) → 5
-# fibonacci(6) → 8
-
-
 
 
 # 9
-#
-# capitalize_words("hello world") → "Hello World"
-# capitalize_words("python is fun") → "Python Is Fun"
+# Q: How did you capitalize the first letter of every word?
+# A: I split the sentence into words, capitalized each one, and joined them back with spaces.
+
 # def capitalize(sentence):
 #     words = sentence.split()
 #     capitalized_words = []
@@ -135,14 +135,13 @@
 #         capitalized_words.append(word.capitalize())
 #     return " ".join(capitalized_words)
 #
-#
 # print(capitalize("python is fun"))  # Output: "Python Is Fun"
 
-# sum_of_digits(123) → 6   (1 + 2 + 3)
-# sum_of_digits(505) → 10  (5 + 0 + 5)
 
 # 10
-#
+# Q: How did you sum the digits of a number?
+# A: I turned the number into a string to iterate through each digit and added them as integers.
+
 # def sum_of_digits(numbers):
 #     total = 0
 #     for i in str(numbers):
@@ -150,9 +149,3 @@
 #
 #     return total
 # print(sum_of_digits(123))
-
-
-
-
-
-
